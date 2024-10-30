@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Paint</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body onload="randomRiddle()">
     <video width="100%" height="auto" autoplay muted loop id="background-video">
         <source src="background.mp4" type="video/mp4">
     </video>
     <div class="flex center verticle screen-height">
-        <div class="container flex center verticle background-glossy-white round-corners">
-            <h1>Riddle Me This!</h1>
+        <div class="container flex center verticle background-glossy-white round-corners inset-shadow">
+            <h1 id="riddle" class="text-white"></h1>
             <form action="">
-                <label for="answer-field">Answer Here</label>
-                <br>
                 <textarea autofocus required name="answer-field" id="answer-field"></textarea>
                 <br>
-                <button>Submit</button>
+                <button id="submit" class="button round-corners">Submit</button>
             </form>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
