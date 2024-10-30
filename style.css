@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+    resize: none;
+}
+
+body {
+    background-color: #220044;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.verticle {
+    flex-direction: column;
+}
+
+.background-glossy-white {
+    background-color: #ddccddaa;
+}
+
+.screen-height {
+    height: 100vh;;
+}
+
+.round-corners {
+    border-radius: 10px;
+}
+
+.container {
+   padding: 100px;
+   z-index: 1;
+}
+
+#background-video {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+}
