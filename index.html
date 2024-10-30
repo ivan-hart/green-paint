@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Paint</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 </head>
 
 <body onload="randomRiddle()">
@@ -14,11 +17,11 @@
     </video>
     <div class="flex center verticle screen-height">
         <div class="container flex center verticle background-glossy-white round-corners inset-shadow">
-            <h1 id="riddle" class="text-white"></h1>
-            <form action="">
-                <textarea autofocus required name="answer-field" id="answer-field"></textarea>
+            <form class="flex center verticle" action="">
+                <p id="riddle" class="text-white"></p>
+                <textarea autofocus name="answer-field" id="answer-field"></textarea>
                 <br>
-                <button id="submit" class="button round-corners">Submit</button>
+                <button id="submit" class="button round-corners text-white">Submit</button>
             </form>
         </div>
     </div>
